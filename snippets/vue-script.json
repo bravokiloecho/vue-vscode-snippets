@@ -1,12 +1,12 @@
 {
   "Vue Data": {
     "prefix": "vdata",
-    "body": ["data() {", "\treturn {", "\t\t${1:key}: ${2:value}", "\t}", "},"],
+    "body": ["data() {", "\treturn {", "\t\t${1:key}: ${2:value},", "\t}", "},"],
     "description": "Vue Component Data"
   },
   "Vue Methods": {
     "prefix": "vmethod",
-    "body": ["methods: {", "\t${1:name}() {", "\t\t${0}", "\t}", "},"],
+    "body": ["methods: {", "\t${1:name}() {", "\t\t${0}", "\t},", "},"],
     "description": "vue method"
   },
   "Vue Computed": {
@@ -15,7 +15,7 @@
       "computed: {",
       "\t${1:name}() {",
       "\t\treturn this.${2:data} ${0}",
-      "\t}",
+      "\t},",
       "},"
     ],
     "description": "computed value"
@@ -66,7 +66,7 @@
       "watch: {",
       "\t${1:data}(${2:newValue}, ${3:oldValue}) {",
       "\t\t${0}",
-      "\t}",
+      "\t},",
       "},"
     ],
     "description": "vue watcher"
@@ -92,7 +92,7 @@
       "props: {",
       "\t${1:propName}: {",
       "\t\ttype: ${2:Number},",
-      "\t\tdefault: ${0}",
+      "\t\tdefault: ${0},",
       "\t},",
       "},"
     ],
