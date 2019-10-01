@@ -22,42 +22,42 @@
   },
   "Vue Lifecycle beforeCreate": {
     "prefix": "vbeforecreate",
-    "body": ["beforeCreate () {", "\t${0};", "},"],
+    "body": ["beforeCreate () {", "\t${0}", "},"],
     "description": "beforeCreate lifecycle method"
   },
   "Vue Lifecycle created": {
     "prefix": "vcreated",
-    "body": ["created () {", "\t${0};", "},"],
+    "body": ["created () {", "\t${0}", "},"],
     "description": "created lifecycle method"
   },
   "Vue Lifecycle beforeMount": {
     "prefix": "vbeforemount",
-    "body": ["beforeMount () {", "\t${0};", "},"],
+    "body": ["beforeMount () {", "\t${0}", "},"],
     "description": "beforeMount lifecycle method"
   },
   "Vue Lifecycle mounted": {
     "prefix": "vmounted",
-    "body": ["mounted () {", "\t${0};", "},"],
+    "body": ["mounted () {", "\t${0}", "},"],
     "description": "mounted lifecycle method"
   },
   "Vue Lifecycle beforeUpdate": {
     "prefix": "vbeforeupdate",
-    "body": ["beforeUpdate () {", "\t${0};", "},"],
+    "body": ["beforeUpdate () {", "\t${0}", "},"],
     "description": "beforeUpdate lifecycle method"
   },
   "Vue Lifecycle updated": {
     "prefix": "vupdated",
-    "body": ["updated () {", "\t${0};", "},"],
+    "body": ["updated () {", "\t${0}", "},"],
     "description": "updated lifecycle method"
   },
   "Vue Lifecycle beforeDestroy": {
     "prefix": "vbeforedestroy",
-    "body": ["beforeDestroy () {", "\t${0};", "},"],
+    "body": ["beforeDestroy () {", "\t${0}", "},"],
     "description": "beforeDestroy lifecycle method"
   },
   "Vue Lifecycle destroyed": {
     "prefix": "vdestroyed",
-    "body": ["destroyed () {", "\t${0};", "},"],
+    "body": ["destroyed () {", "\t${0}", "},"],
     "description": "destroyed lifecycle method"
   },
   "Vue Watchers": {
@@ -100,7 +100,7 @@
   },
   "Vue Import File": {
     "prefix": "vimport",
-    "body": ["import ${1:New} from '@/components/${1:New}.vue';"],
+    "body": ["import ${1:New} from '@/components/${1:New}.vue'"],
     "description": "Import one component into another"
   },
   "Vue Import into the Component": {
@@ -186,7 +186,7 @@
     "body": [
       "filters: {",
       "\t${1:fnName}: function(${2:value}) {",
-      "\t\treturn ${2:value}${0};",
+      "\t\treturn ${2:value}${0}",
       "\t}",
       "}"
     ],
@@ -213,9 +213,9 @@
     "body": [
       "Vue.directive('${1:directiveName}', {",
       "\tbind(el, binding, vnode) {",
-      "\t\tel.style.${2:arg} = binding.value.${2:arg};",
+      "\t\tel.style.${2:arg} = binding.value.${2:arg}",
       "\t}",
-      "});"
+      "})"
     ],
     "description": "vue custom directive"
   },
@@ -234,18 +234,18 @@
     "prefix": "vanimhook-js",
     "body": [
       "beforeEnter(el) {",
-      "\tconsole.log('beforeEnter');",
+      "\tconsole.log('beforeEnter')",
       "},",
       "enter(el, done) {",
-      "\tconsole.log('enter');",
-      "\tdone();",
+      "\tconsole.log('enter')",
+      "\tdone()",
       "},",
       "beforeLeave(el) {",
-      "\tconsole.log('beforeLeave');",
+      "\tconsole.log('beforeLeave')",
       "},",
       "leave(el, done) {",
-      "\tconsole.log('leave');",
-      "\tdone();",
+      "\tconsole.log('leave')",
+      "\tdone()",
       "},"
     ],
     "description": "transition component js hooks"
