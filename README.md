@@ -14,6 +14,13 @@ _Current version: Vue2_
 
 ## Installation
 
+_** NEW for fork **_
+
+```
+cd $HOME/.vscode/extensions
+git clone git@github.com:bravokiloecho/vue-vscode-snippets.git
+```
+
 _Either_
 
 - click the extensions button (lowest square icon in the editor), and type in Vue VSCode Snippets, select the one by sdras
