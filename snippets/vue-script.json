@@ -1,7 +1,7 @@
 {
   "Vue Data": {
     "prefix": "vdata",
-    "body": ["data(){", "\treturn {", "\t\t${1:key}: ${2:value},", "\t}", "},"],
+    "body": ["data (){", "\treturn {", "\t\t${1:key}: ${2:value},", "\t}", "},"],
     "description": "Vue Component Data"
   },
   "Vue Methods": {
